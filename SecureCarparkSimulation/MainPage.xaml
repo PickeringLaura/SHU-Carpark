@@ -7,7 +7,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+        <Grid HorizontalAlignment="Left" Height="612" Margin="97,46,0,0" VerticalAlignment="Top" Width="1110" BorderBrush="#FFF0AFAF" Background="#FF442121">
+            <Button x:Name="Enter_Button" Content="Enter" HorizontalAlignment="Left" Height="160" Margin="212,478,0,0" VerticalAlignment="Top" Width="1040" FontSize="72" Click="EnterCarparkButton"/>
+            <TextBlock x:Name="Press_Button_To_Enter_Carpark" HorizontalAlignment="Left" Margin="212,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="220" Width="1040" TextAlignment="Center" FontSize="72">
+                <Run FontWeight="Bold" Text="Press Button "/>
+                <Run Text="to "/>
+                <Run FontWeight="Bold"/>
+                <LineBreak/>
+                <Run FontWeight="Bold" Text="Enter"/>
+                <Run Text=" the car park"/>
+            </TextBlock>
+            <TextBlock x:Name="NumberOfSpacesAvailable" HorizontalAlignment="Left" Margin="212,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="104" Width="638" FontSize="24" Text="50 Spaces available"/>
+        </Grid>
 
     </Grid>
 </Page>

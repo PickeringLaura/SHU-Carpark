@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="SecureCarparkSimulation.SpaceFree"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecureCarparkSimulation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="799" Margin="143,133,0,0" VerticalAlignment="Top" Width="1664">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="121" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1651" FontSize="71" TextAlignment="Center">
+                <Run Text="Please select payment below"/>
+                <Run Text="."/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="115" Margin="609,136,0,0" TextWrapping="Wrap" Text="#AmountDue#" VerticalAlignment="Top" Width="492" FontSize="48" TextAlignment="Center"/>
+            <Image x:Name="AndroidPayImage" HorizontalAlignment="Left" Height="299" Margin="108,410,0,0" VerticalAlignment="Top" Width="300" Source="Assets/androidpaylogo-outlined.png"/>
+            <Image x:Name="ContactLessImage" HorizontalAlignment="Left" Height="202" Margin="899,451,0,0" VerticalAlignment="Top" Width="300" Source="Assets/Universal_Contactless_Card_Symbol.svg.png"/>
+            <Image x:Name="MasterCardImage" HorizontalAlignment="Left" Height="107" Margin="1286,512,0,0" VerticalAlignment="Top" Width="300" Source="Assets/Visa.png"/>
+            <Image x:Name="ApplePayImage" HorizontalAlignment="Left" Height="142" Margin="487,477,0,0" VerticalAlignment="Top" Width="300" Source="Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png"/>
+            <Button x:Name="button" Content="Enter discount code&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="658,256,0,0" Height="96" Width="421" FontSize="36"/>
+        </Grid>
+
+    </Grid>
+</Page>

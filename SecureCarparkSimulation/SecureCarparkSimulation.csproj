@@ -95,10 +95,35 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CarparkSimulationScripts\Carpark.cs" />
+    <Compile Include="CarparkSimulationScripts\CarparkManager.cs" />
+    <Compile Include="CarparkSimulationScripts\LocalInterface.cs" />
+    <Compile Include="CarparkSimulationScripts\Space.cs" />
+    <Compile Include="CoinDispensed.xaml.cs">
+      <DependentUpon>CoinDispensed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnterRegAndPassword.xaml.cs">
+      <DependentUpon>EnterRegAndPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InCaseOfEmergency.xaml.cs">
+      <DependentUpon>InCaseOfEmergency.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InsertCoin.xaml.cs">
+      <DependentUpon>InsertCoin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PleaseLeave.xaml.cs">
+      <DependentUpon>PleaseLeave.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturningEnterRegAndPass.xaml.cs">
+      <DependentUpon>ReturningEnterRegAndPass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpaceFree.xaml.cs">
+      <DependentUpon>SpaceFree.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -107,6 +132,11 @@
     <None Include="SecureCarparkSimulation_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\450mmx150mm-RIGHT-exit.gif" />
+    <Content Include="Assets\androidpaylogo-outlined.png" />
+    <Content Include="Assets\apple-pay-logo-F68C9AC252-seeklogo.com.png" />
+    <Content Include="Assets\Universal_Contactless_Card_Symbol.svg.png" />
+    <Content Include="Assets\Visa.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -121,9 +151,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CoinDispensed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EnterRegAndPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InCaseOfEmergency.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InsertCoin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PleaseLeave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReturningEnterRegAndPass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpaceFree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
