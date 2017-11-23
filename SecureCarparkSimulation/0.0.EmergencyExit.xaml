@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="SecureCarparkSimulation.EmergencyExit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecureCarparkSimulation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="789" Margin="106,97,0,0" VerticalAlignment="Top" Width="1280">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="266" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1260" FontSize="72" TextAlignment="Center">
+                <Run Text="You have exit through "/>
+                <Run FontWeight="Bold" Text="#exitX# "/>
+                <Run Text="as you were on the "/>
+                <Run FontWeight="Bold" Text="#numberOfFloor#."/>
+            </TextBlock>
+            <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Height="199" Margin="161,454,0,0" VerticalAlignment="Top" Width="962" FontSize="72"/>
+        </Grid>
+
+    </Grid>
+</Page>

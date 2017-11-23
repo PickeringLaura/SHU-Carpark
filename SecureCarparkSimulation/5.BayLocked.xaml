@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="SecureCarparkSimulation.BayLocked"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecureCarparkSimulation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid HorizontalAlignment="Left" Height="754" Margin="161,126,0,0" VerticalAlignment="Top" Width="1178">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="260" Margin="147,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="918" FontSize="72" TextAlignment="Center">
+                <Run Text="This bay is now "/>
+                <Run FontWeight="Bold" Text="Locked"/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="228" Margin="147,0,0,251" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="918" FontSize="72" TextAlignment="Center">
+                <Run Text="To unlock, press "/>
+                <Run FontWeight="Bold" Text="C"/>
+                <Run FontWeight="Bold" Text="ontinue"/>
+            </TextBlock>
+            <Button x:Name="button" Content="Continue to Unlock" HorizontalAlignment="Left" Height="236" Margin="147,508,0,0" VerticalAlignment="Top" Width="918" FontSize="72"/>
+        </Grid>
+
+    </Grid>
+</Page>

@@ -5,7 +5,7 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="1139.59" Width="1860.164">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid HorizontalAlignment="Left" Height="799" Margin="143,133,0,0" VerticalAlignment="Top" Width="1664">
@@ -14,12 +14,17 @@
                 <Run Text="."/>
             </TextBlock>
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="115" Margin="609,136,0,0" TextWrapping="Wrap" Text="#AmountDue#" VerticalAlignment="Top" Width="492" FontSize="48" TextAlignment="Center"/>
-            <Image x:Name="AndroidPayImage" HorizontalAlignment="Left" Height="299" Margin="108,410,0,0" VerticalAlignment="Top" Width="300" Source="Assets/androidpaylogo-outlined.png"/>
             <Image x:Name="ContactLessImage" HorizontalAlignment="Left" Height="202" Margin="899,451,0,0" VerticalAlignment="Top" Width="300" Source="Assets/Universal_Contactless_Card_Symbol.svg.png"/>
             <Image x:Name="MasterCardImage" HorizontalAlignment="Left" Height="107" Margin="1286,512,0,0" VerticalAlignment="Top" Width="300" Source="Assets/Visa.png"/>
             <Image x:Name="ApplePayImage" HorizontalAlignment="Left" Height="142" Margin="487,477,0,0" VerticalAlignment="Top" Width="300" Source="Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png"/>
             <Button x:Name="button" Content="Enter discount code&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="658,256,0,0" Height="96" Width="421" FontSize="36"/>
+            <Image x:Name="AndroidPayImage" HorizontalAlignment="Left" Height="299" Margin="108,410,0,0" VerticalAlignment="Top" Width="300" Source="Assets/androidpaylogo-outlined.png"/>
         </Grid>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="143" Margin="366,852,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1132" FontSize="48" TextAlignment="Center">
+            <Run Text="You have been discount #xAmount#"/>
+            <Run Text=" "/>
+            <Run FontWeight="Bold" Text="Activate if applicable"/>
+        </TextBlock>
 
     </Grid>
 </Page>
