@@ -5,12 +5,11 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="968.397" Width="1480.159">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,10,0,226">
-        <Grid HorizontalAlignment="Left" Height="686" Margin="107,123,0,-76" VerticalAlignment="Top" Width="1302">
-            <Button x:Name="Version1_Button" Content="Version 1" HorizontalAlignment="Left" Margin="76,10,0,521" VerticalAlignment="Stretch" Width="1134" FontSize="72"/>
-            <Button x:Name="Version2_Button" Content="Version 2" HorizontalAlignment="Left" Height="186" Margin="76,266,0,0" VerticalAlignment="Top" Width="1134" FontSize="72"/>
+    mc:Ignorable="d" Height="Auto" Width="Auto">
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill">
+        <Grid Background="White">
+            <Button x:Name="button" Content="Version 1" HorizontalAlignment="Left" Margin="40,40,40,10" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.513" Click="button_Click" FontSize="36"/>
+            <Button x:Name="button_Copy" Content=" Button" HorizontalAlignment="Stretch" Margin="40,110,40,40" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="36"/>
         </Grid>
-    </Grid>
+    </Viewbox>
 </Page>

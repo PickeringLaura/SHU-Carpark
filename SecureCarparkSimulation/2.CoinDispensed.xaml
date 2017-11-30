@@ -18,7 +18,7 @@
                 <LineBreak/>
                 <Run/>
         </TextBlock>
-        <Grid HorizontalAlignment="Left" Height="605" Margin="110,42,0,0" VerticalAlignment="Top" Width="1321" FocusVisualPrimaryBrush="#FF9E1616"/>
+        <Grid HorizontalAlignment="Left" Height="605" Margin="110,42,0,0" VerticalAlignment="Top" Width="1321"/>
         <TextBlock x:Name="AllocatedSpaceTextBox" HorizontalAlignment="Left" Height="99" Margin="120,451,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1321" FontSize="72" TextAlignment="Center">
                 <Run Text="#space#"/>
                 <LineBreak/>
