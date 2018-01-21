@@ -26,5 +26,30 @@ namespace SecureCarparkSimulation
         {
             this.InitializeComponent();
         }
+
+        private void Btn_EnterDiscountCode_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(discountCode));
+        }
+
+        private void Image_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AndroidPay));
+        }
+
+        private void Pic_ApplePay_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ApplePay));
+        }
+
+        private void Pic_ContactLessPay_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ContactlessPay));
+        }
+
+        private void Pic_VisaOrCreditPay_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VisaOrCreditPay));
+        }
     }
 }

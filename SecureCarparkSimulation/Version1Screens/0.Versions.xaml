@@ -8,12 +8,12 @@
     mc:Ignorable="d" Height="Auto" Width="Auto">
     <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill">
         <Grid Background="White">
-            <Button x:Name="Version1" Content="Version 1" HorizontalAlignment="Left" Margin="40,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.513" Click="button_Click" FontSize="36" Width="167" Height="66"/>
-            <Button x:Name="Version2" Content="Version 2" HorizontalAlignment="Stretch" Margin="40,110,360,96" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="36"/>
-            <Button x:Name="Version2_Copy" Content="Version 2&#xD;&#xA;Fire" HorizontalAlignment="Stretch" Margin="212,110,253,96" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20"/>
-            <Button x:Name="Version2_Copy1" Content="Version 2&#xD;&#xA;Theft" HorizontalAlignment="Stretch" Margin="319,110,146,96" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20"/>
-            <Button x:Name="Version2_Copy2" Content="Version 1&#xA;Fire" HorizontalAlignment="Stretch" Margin="212,34,253,172" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20"/>
-            <Button x:Name="Version2_Copy3" Content="Version 1&#xA;Theft" HorizontalAlignment="Stretch" Margin="319,34,146,172" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20"/>
+            <Button x:Name="Version1" Content="Version 1" HorizontalAlignment="Left" Margin="40,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.513" Click="button_Click" FontSize="24" Width="157"/>
+            <Button x:Name="Version2" Content="Version 2" HorizontalAlignment="Stretch" Margin="40,109,435,97" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="24" Width="157"/>
+            <Button x:Name="Version2_Copy" Content="Version 2 Fire" HorizontalAlignment="Stretch" Margin="222,110,253,96" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20" Width="157"/>
+            <Button x:Name="Version2_Copy1" Content="Version 2 Theft" HorizontalAlignment="Stretch" Margin="425,109,40,97" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20" Width="157"/>
+            <Button x:Name="Version2_Copy2" Content="Version 1 Fire" HorizontalAlignment="Stretch" Margin="222,47,253,159" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20" Width="157"/>
+            <Button x:Name="Version2_Copy3" Content="Version 1 Theft" HorizontalAlignment="Stretch" Margin="425,47,50,159" VerticalAlignment="Stretch" RenderTransformOrigin="0.489,0.513" FontSize="20" Width="157"/>
         </Grid>
     </Viewbox>
 </Page>

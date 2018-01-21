@@ -20,11 +20,16 @@ namespace SecureCarparkSimulation
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PleaseLeave : Page
+    public sealed partial class ContactlessPay : Page
     {
-        public PleaseLeave()
+        public ContactlessPay()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(PaidAmountDue));
         }
     }
 }

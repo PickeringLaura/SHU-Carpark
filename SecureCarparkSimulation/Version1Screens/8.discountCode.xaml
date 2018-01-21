@@ -5,18 +5,13 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Height="380">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="750" Margin="106,106,0,0" VerticalAlignment="Top" Width="1284">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="237" Margin="89,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1059" FontSize="72" TextAlignment="Center">
-                <Run Text="Please enter dis"/>
-                <Run Text="c"/>
-                <Run Text="ount code below and press continue"/>
-            </TextBlock>
-            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="191" Margin="89,314,0,0" TextWrapping="Wrap" Text="#Enter Discount Code Here#" VerticalAlignment="Top" Width="1059" FontSize="72" TextAlignment="Center"/>
-            <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Height="143" Margin="89,597,0,0" VerticalAlignment="Top" Width="1059" FontSize="72"/>
-        </Grid>
-
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="txt_EnterDiscountCodeBelow" HorizontalAlignment="Center" Height="49" Margin="68,14,28,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1059" FontSize="36" TextAlignment="Center" Text="Please enter discount code below and press continue"/>
+            <TextBox x:Name="txtBx_EnterDiscount" HorizontalAlignment="Center" Height="65" Margin="312,88,329,0" TextWrapping="Wrap" Text="#Enter Discount Code Here#" VerticalAlignment="Top" Width="514" FontSize="36" TextAlignment="Center"/>
+            <Button x:Name="btn_Continue" Content="Continue" HorizontalAlignment="Center" Height="143" Margin="370,199,385,-2" VerticalAlignment="Top" Width="400" FontSize="48"/>
     </Grid>
+    </Viewbox>
 </Page>

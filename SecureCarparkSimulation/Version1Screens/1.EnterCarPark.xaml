@@ -5,31 +5,12 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Width="Auto" Height="Auto">
+    mc:Ignorable="d" Height="465">
 
-    <Grid Background="White" RequestedTheme="Dark">
-        <Grid Height="Auto" Margin="161,100" Width="Auto" BorderBrush="#FFF0AFAF" Background="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
-            <Grid.RenderTransform>
-                <CompositeTransform Rotation="-0.188"/>
-            </Grid.RenderTransform>
-            <Button x:Name="Enter_Button" Content="Enter" HorizontalAlignment="Stretch" Margin="130,400,130,161" VerticalAlignment="Stretch" FontSize="72" Click="EnterCarparkButton" Foreground="Black"/>
-            <TextBlock x:Name="Press_Button_To_Enter_Carpark" Margin="210,210,210,500" TextWrapping="Wrap" TextAlignment="Center" FontSize="48" RenderTransformOrigin="0.5,0.5" Foreground="Black">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="0.007"/>
-                </TextBlock.RenderTransform>
-                <Run FontWeight="Bold" Text="Press Button "/>
-                <Run Text="to "/>
-                <Run FontWeight="Bold"/>
-                <LineBreak/>
-                <Run FontWeight="Bold" Text="Enter"/>
-                <Run Text=" the car park"/>
-            </TextBlock>
-            <TextBlock x:Name="NumberOfSpacesAvailable" Margin="80,80,80,700" TextWrapping="Wrap" FontSize="36" Text="Amount of spaces available" RenderTransformOrigin="0.5,0.5" TextAlignment="Center" Foreground="Black">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="0.604"/>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-        </Grid>
-
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="txt_NumberOfSpaces" HorizontalAlignment="Center" Height="114" Margin="210,46,257,0" Text="Number Of Available Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="443" MinWidth="200" MinHeight="100" SelectionChanged="txt_NumberOfSpaces_SelectionChanged" FontSize="36" TextAlignment="Center"/>
+        <Button x:Name="Btn_Enter" Content="Enter Car Park" HorizontalAlignment="Center" Height="68" Margin="205,214,204,0" VerticalAlignment="Top" Width="501" MinWidth="200" MinHeight="100" RelativePanel.Below="txt_NumberOfSpaces" FontSize="48" Click="Btn_Enter_Click"/>
     </Grid>
+    </Viewbox>
 </Page>

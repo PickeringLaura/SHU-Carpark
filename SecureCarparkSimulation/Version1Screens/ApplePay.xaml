@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="SecureCarparkSimulation.ApplePay"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecureCarparkSimulation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="415" Width="960">
+
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Button Content="Pay Now" HorizontalAlignment="Center" Height="134" Margin="294,200,277,-3" VerticalAlignment="Top" Width="201" FontSize="36" Click="Button_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Button.RenderTransform>
+                    <CompositeTransform SkewY="-0.195" TranslateY="-0.69"/>
+                </Button.RenderTransform>
+            </Button>
+            <Image x:Name="Pic_ApplePayNow" HorizontalAlignment="Left" Height="165" Margin="237,28,0,0" VerticalAlignment="Top" Width="294" Source="ms-appx:///Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png">
+                <Image.FocusVisualPrimaryBrush>
+                    <ImageBrush ImageSource="ms-appx:///Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png"/>
+                </Image.FocusVisualPrimaryBrush>
+            </Image>
+        </Grid>
+    </Viewbox>
+</Page>

@@ -5,26 +5,36 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="1139.59" Width="1860.164">
+    mc:Ignorable="d" Height="415">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="799" Margin="143,133,0,0" VerticalAlignment="Top" Width="1664">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="121" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1651" FontSize="71" TextAlignment="Center">
-                <Run Text="Please select payment below"/>
-                <Run Text="."/>
-            </TextBlock>
-            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="115" Margin="609,136,0,0" TextWrapping="Wrap" Text="#AmountDue#" VerticalAlignment="Top" Width="492" FontSize="48" TextAlignment="Center"/>
-            <Image x:Name="ContactLessImage" HorizontalAlignment="Left" Height="202" Margin="899,451,0,0" VerticalAlignment="Top" Width="300" Source="Assets/Universal_Contactless_Card_Symbol.svg.png"/>
-            <Image x:Name="MasterCardImage" HorizontalAlignment="Left" Height="107" Margin="1286,512,0,0" VerticalAlignment="Top" Width="300" Source="Assets/Visa.png"/>
-            <Image x:Name="ApplePayImage" HorizontalAlignment="Left" Height="142" Margin="487,477,0,0" VerticalAlignment="Top" Width="300" Source="Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png"/>
-            <Button x:Name="button" Content="Enter discount code&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="658,256,0,0" Height="96" Width="421" FontSize="36"/>
-            <Image x:Name="AndroidPayImage" HorizontalAlignment="Left" Height="299" Margin="108,410,0,0" VerticalAlignment="Top" Width="300" Source="Assets/androidpaylogo-outlined.png"/>
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <TextBlock x:Name="txt_ChoosePaymentBelow" HorizontalAlignment="Center" Height="90" Margin="360,10,345,0" Text="Please Choose Payment Method" TextWrapping="Wrap" VerticalAlignment="Top" Width="575" FontSize="36" TextAlignment="Center"/>
+            <TextBlock x:Name="txt_AmountDue" HorizontalAlignment="Center" Height="55" Margin="515,65,470,0" Text="#AmountDue#" TextWrapping="Wrap" VerticalAlignment="Top" Width="295" FontSize="36" TextAlignment="Center"/>
+            <Button x:Name="Btn_EnterDiscountCode" Content="Enter Discount Code Here" HorizontalAlignment="Center" Height="75" Margin="405,130,385,0" VerticalAlignment="Top" Width="490" FontSize="36" Click="Btn_EnterDiscountCode_Click"/>
+            <Image x:Name="Pic_ApplePay" HorizontalAlignment="Center" Height="135" Margin="320,260,690,0" VerticalAlignment="Top" Width="270"  Source="ms-appx:///Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png" Tapped="Pic_ApplePay_Tapped">
+                <Image.FocusVisualPrimaryBrush>
+                    <ImageBrush ImageSource="ms-appx:///Assets/apple-pay-logo-F68C9AC252-seeklogo.com.png"/>
+                </Image.FocusVisualPrimaryBrush>
+            </Image>
+            <Image x:Name="Pic_ContactLessPay" HorizontalAlignment="Center" Height="150" Margin="660,245,360,0" VerticalAlignment="Top" Width="260" Source="ms-appx:///Assets/Universal_Contactless_Card_Symbol.svg.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Tapped="Pic_ContactLessPay_Tapped">
+                <Image.RenderTransform>
+                    <CompositeTransform Rotation="0.63"/>
+                </Image.RenderTransform>
+                <Image.FocusVisualPrimaryBrush>
+                    <ImageBrush ImageSource="ms-appx:///Assets/Universal_Contactless_Card_Symbol.svg.png"/>
+                </Image.FocusVisualPrimaryBrush>
+            </Image>
+            <Image x:Name="Pic_VisaOrCreditPay" HorizontalAlignment="Center" Height="85" Margin="950,285,50,0" VerticalAlignment="Top" Width="280" Source="ms-appx:///Assets/Visa.png" Tapped="Pic_VisaOrCreditPay_Tapped">
+                <Image.FocusVisualPrimaryBrush>
+                    <ImageBrush ImageSource="ms-appx:///Assets/Visa.png"/>
+                </Image.FocusVisualPrimaryBrush>
+            </Image>
+            <Image HorizontalAlignment="Left" Height="150" Margin="65,230,0,0" VerticalAlignment="Top" Width="175" Source="ms-appx:///Assets/androidpaylogo-outlined.png" Tapped="Image_Tapped">
+                <Image.FocusVisualPrimaryBrush>
+                    <ImageBrush ImageSource="ms-appx:///Assets/androidpaylogo-outlined.png"/>
+                </Image.FocusVisualPrimaryBrush>
+            </Image>
         </Grid>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="143" Margin="366,852,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1132" FontSize="48" TextAlignment="Center">
-            <Run Text="You have been discount #xAmount#"/>
-            <Run Text=" "/>
-            <Run FontWeight="Bold" Text="Activate if applicable"/>
-        </TextBlock>
-
-    </Grid>
+    </Viewbox>
 </Page>

@@ -39,12 +39,26 @@ namespace SecureCarparkSimulation
 
         private void AllocateNewSpace()
         {
-            throw new NotImplementedException();
         }
 
         private void UpdateSpaces()
         {
-            NumberOfSpacesAvailable.Text = LocalInterface.Instance.GetSpaces() + " spaces are available";
+            txt_NumberOfSpaces.Text = LocalInterface.Instance.GetSpaces() + " spaces are available";
+        }
+
+        private void spaces_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void txt_NumberOfSpaces_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Enter_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CoinDispensed));
         }
     }
 }

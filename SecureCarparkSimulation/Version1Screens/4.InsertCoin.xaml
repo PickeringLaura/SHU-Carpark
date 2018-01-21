@@ -5,10 +5,10 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="1237.951" Width="1843.934">
+    mc:Ignorable="d" Height="340" Width="605">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="1228" VerticalAlignment="Top">
-        <Grid HorizontalAlignment="Left" Height="977" Margin="129,153,0,0" VerticalAlignment="Top" Width="1659">
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="113" Margin="82,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1526" FontSize="72" TextAlignment="Center">
                 <Run Text=" "/>
                 <Run FontWeight="Bold" Text="Insert "/>
@@ -16,16 +16,9 @@
                 <Run Text=" "/>
                 <Run FontWeight="Bold" Text="Confirm"/>
             </TextBlock>
-            <Button x:Name="InsertChipCoin_Button" Content="Insert Chip Coin" HorizontalAlignment="Left" Height="276" Margin="269,262,0,0" VerticalAlignment="Top" Width="1106" FontSize="72"/>
-            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="118" Margin="269,543,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1106" FontSize="48" TextAlignment="Center">
-                <Run Text="~Your chip coi"/>
-                <Run Text="n"/>
-                <Run Text=" has been entered"/>
-                <Run Text=" to confirm.  Please take your chip coin."/>
-                <Run Text="~"/>
-            </TextBlock>
-            <Button x:Name="button" Content="Take Chip Coin and Continue" HorizontalAlignment="Left" Height="186" Margin="269,666,0,0" VerticalAlignment="Top" Width="1106" FontSize="72"/>
+            <Button x:Name="InsertChipCoin_Button" Content="Insert Chip Coin" HorizontalAlignment="Left" Height="204" Margin="269,262,0,0" VerticalAlignment="Top" Width="1106" FontSize="72"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="118" Margin="269,543,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1106" FontSize="48" TextAlignment="Center" Text="~Your chip coin  has been entered  to confirm.  Please take your chip coin. ~"/>
+            <Button x:Name="button" Content="Take Chip Coin and Continue" HorizontalAlignment="Left" Height="186" Margin="269,722,0,0" VerticalAlignment="Top" Width="1106" FontSize="72" Click="button_Click"/>
         </Grid>
-
-    </Grid>
+    </Viewbox>
 </Page>

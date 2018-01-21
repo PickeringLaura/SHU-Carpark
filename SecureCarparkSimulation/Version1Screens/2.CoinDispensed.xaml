@@ -1,28 +1,18 @@
 ﻿<Page
-    x:Class="SecureCarparkSimulation.BlankPage1"
+    x:Class="SecureCarparkSimulation.CoinDispensed"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="623.016">
+    mc:Ignorable="d" Height="465">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="207" Margin="40,42,0,0" TextWrapping="Wrap" Text="Coin Dispensed - Please Collect From Below" VerticalAlignment="Top" Width="1321" FontSize="72" TextAlignment="Center"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="99" Margin="120,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1321" FontSize="72" TextAlignment="Center">
-                <Run Text="Your Allocated "/>
-                <Run FontWeight="Bold" Text="S"/>
-                <Run FontWeight="Bold" Text="p"/>
-                <Run FontWeight="Bold" Text="ace "/>
-                <Run Text="Is:"/>
-                <LineBreak/>
-                <Run/>
-        </TextBlock>
-        <Grid HorizontalAlignment="Left" Height="605" Margin="110,42,0,0" VerticalAlignment="Top" Width="1321"/>
-        <TextBlock x:Name="AllocatedSpaceTextBox" HorizontalAlignment="Left" Height="99" Margin="120,451,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1321" FontSize="72" TextAlignment="Center">
-                <Run Text="#space#"/>
-                <LineBreak/>
-                <Run/>
-        </TextBlock>
-    </Grid>
+    <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="71" Margin="110,42,70,0" TextWrapping="Wrap" Text="Coin Dispensed - Please Collect From Below" VerticalAlignment="Top" Width="1100" FontSize="48" TextAlignment="Center"/>
+            <Button x:Name="Btn_CoinCollection" Content="Collect Coin" HorizontalAlignment="Center" Height="137" Margin="225,348,240,-16" VerticalAlignment="Top" Width="815" FontSize="72" Click="Btn_CoinCollection_Click" RenderTransformOrigin="0.466,-0.303"/>
+            <TextBlock x:Name="Txt_Block_AllocatedSpaceIs" HorizontalAlignment="Center" Height="72" Margin="140,147,107,0" Text="Your Allocated Space is" TextWrapping="Wrap" VerticalAlignment="Top" Width="1033" FontSize="48" TextAlignment="Center"/>
+            <TextBlock x:Name="Txt_Block_SpaceNumber" HorizontalAlignment="Center" Height="58" Margin="410,224,358,0" Text="#Space#" TextWrapping="Wrap" VerticalAlignment="Top" Width="512" TextAlignment="Center" FontSize="48"/>
+        </Grid>
+    </Viewbox>
 </Page>
