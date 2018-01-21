@@ -95,48 +95,48 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="5.BayLocked.xaml.cs">
+    <Compile Include="Version1Screens\5.BayLocked.xaml.cs">
       <DependentUpon>5.BayLocked.xaml</DependentUpon>
     </Compile>
     <Compile Include="CarparkSimulationScripts\Carpark.cs" />
     <Compile Include="CarparkSimulationScripts\CarparkManager.cs" />
     <Compile Include="CarparkSimulationScripts\LocalInterface.cs" />
     <Compile Include="CarparkSimulationScripts\Space.cs" />
-    <Compile Include="2.CoinDispensed.xaml.cs">
+    <Compile Include="Version1Screens\2.CoinDispensed.xaml.cs">
       <DependentUpon>2.CoinDispensed.xaml</DependentUpon>
     </Compile>
-    <Compile Include="3.EnterRegAndPassword.xaml.cs">
+    <Compile Include="Version1Screens\3.EnterRegAndPassword.xaml.cs">
       <DependentUpon>3.EnterRegAndPassword.xaml</DependentUpon>
     </Compile>
-    <Compile Include="0.0.0.InCaseOfEmergency.xaml.cs">
+    <Compile Include="Version1Screens\0.0.0.InCaseOfEmergency.xaml.cs">
       <DependentUpon>0.0.0.InCaseOfEmergency.xaml</DependentUpon>
     </Compile>
-    <Compile Include="4.InsertCoin.xaml.cs">
+    <Compile Include="Version1Screens\4.InsertCoin.xaml.cs">
       <DependentUpon>4.InsertCoin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="1.EnterCarPark.xaml.cs">
+    <Compile Include="Version1Screens\1.EnterCarPark.xaml.cs">
       <DependentUpon>1.EnterCarPark.xaml</DependentUpon>
     </Compile>
-    <Compile Include="9.PleaseLeave.xaml.cs">
+    <Compile Include="Version1Screens\9.PleaseLeave.xaml.cs">
       <DependentUpon>9.PleaseLeave.xaml</DependentUpon>
     </Compile>
-    <Compile Include="8.PaidAmountDue.xaml.cs">
+    <Compile Include="Version1Screens\8.PaidAmountDue.xaml.cs">
       <DependentUpon>8.PaidAmountDue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="8.discountCode.xaml.cs">
+    <Compile Include="Version1Screens\8.discountCode.xaml.cs">
       <DependentUpon>8.discountCode.xaml</DependentUpon>
     </Compile>
-    <Compile Include="0.0.EmergencyExit.xaml.cs">
+    <Compile Include="Version1Screens\0.0.EmergencyExit.xaml.cs">
       <DependentUpon>0.0.EmergencyExit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="6.ReturningEnterRegAndPass.xaml.cs">
+    <Compile Include="Version1Screens\6.ReturningEnterRegAndPass.xaml.cs">
       <DependentUpon>6.ReturningEnterRegAndPass.xaml</DependentUpon>
     </Compile>
-    <Compile Include="7.AmountDue.xaml.cs">
+    <Compile Include="Version1Screens\7.AmountDue.xaml.cs">
       <DependentUpon>7.AmountDue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="0.Versions.xaml.cs">
+    <Compile Include="Version1Screens\0.Versions.xaml.cs">
       <DependentUpon>0.Versions.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -166,55 +166,55 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="2.CoinDispensed.xaml">
+    <Page Include="Version1Screens\2.CoinDispensed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="3.EnterRegAndPassword.xaml">
+    <Page Include="Version1Screens\3.EnterRegAndPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="0.0.0.InCaseOfEmergency.xaml">
+    <Page Include="Version1Screens\0.0.0.InCaseOfEmergency.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="4.InsertCoin.xaml">
+    <Page Include="Version1Screens\4.InsertCoin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="1.EnterCarPark.xaml">
+    <Page Include="Version1Screens\1.EnterCarPark.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="9.PleaseLeave.xaml">
+    <Page Include="Version1Screens\9.PleaseLeave.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="6.ReturningEnterRegAndPass.xaml">
+    <Page Include="Version1Screens\6.ReturningEnterRegAndPass.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="7.AmountDue.xaml">
+    <Page Include="Version1Screens\7.AmountDue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="0.Versions.xaml">
+    <Page Include="Version1Screens\0.Versions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="5.BayLocked.xaml">
+    <Page Include="Version1Screens\5.BayLocked.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="8.PaidAmountDue.xaml">
+    <Page Include="Version1Screens\8.PaidAmountDue.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="8.discountCode.xaml">
+    <Page Include="Version1Screens\8.discountCode.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="0.0.EmergencyExit.xaml">
+    <Page Include="Version1Screens\0.0.EmergencyExit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
