@@ -29,12 +29,54 @@ namespace SecureCarparkSimulation
 
         private void button_Copy_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SpaceFree));
+            if (CheckPassword() && CheckReg())
+            {
+                this.Frame.Navigate(typeof(SpaceFree));
+            }
         }
 
         private void btn_ForgotCoin_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(IForgotMyCoin));
+        }
+
+        private bool CheckReg()
+        {
+            if (Pass_EnterReg.Password.Length == 0)
+            {
+                regStatusText.Text = "The registration field cannot be left empty";
+                return false;
+            }
+            else if (Pass_EnterReg.Password.Length <= 7)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private bool CheckPassword()
+        {
+            if (Pass_EnterPassword.Password == "Password")
+            {
+                passwordStatusText.Text = " 'Password' is not allowed to be set as a password";
+                return false;
+            }
+            else if (Pass_EnterPassword.Password.Length == 0)
+            {
+                passwordStatusText.Text = "The password field cannot be left empty";
+                return false;
+            }
+            else if (Pass_EnterPassword.Password.Length <= 16)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

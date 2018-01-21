@@ -16,9 +16,9 @@
                 <Run Text=" "/>
                 <Run FontWeight="Bold" Text="Confirm"/>
             </TextBlock>
-            <Button x:Name="InsertChipCoin_Button" Content="Insert Chip Coin" HorizontalAlignment="Left" Height="204" Margin="269,262,0,0" VerticalAlignment="Top" Width="1106" FontSize="72"/>
-            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="118" Margin="269,543,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1106" FontSize="48" TextAlignment="Center" Text="~Your chip coin  has been entered  to confirm.  Please take your chip coin. ~"/>
-            <Button x:Name="button" Content="Take Chip Coin and Continue" HorizontalAlignment="Left" Height="186" Margin="269,722,0,0" VerticalAlignment="Top" Width="1106" FontSize="72" Click="button_Click"/>
+            <Button x:Name="InsertChipCoin_Button" Content="Insert Chip Coin" HorizontalAlignment="Left" Height="204" Margin="269,262,0,0" VerticalAlignment="Top" Width="1106" FontSize="72" Click="InsertChipCoin_Button_Click"/>
+            <TextBlock x:Name="txt_coinProcessed" HorizontalAlignment="Left" Height="210" Margin="270,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1106" FontSize="48" TextAlignment="Center" Text=""/>
+            <Button x:Name="button" Content="Take Chip Coin and Continue" HorizontalAlignment="Left" Height="186" Margin="263,704,0,0" VerticalAlignment="Top" Width="1106" FontSize="72" Click="button_Click"/>
         </Grid>
     </Viewbox>
 </Page>

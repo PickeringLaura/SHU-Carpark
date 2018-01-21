@@ -29,7 +29,38 @@ namespace SecureCarparkSimulation
 
         private void btn_Continue_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SpaceFree));
+            if (CheckPassword())
+            {
+                this.Frame.Navigate(typeof(SpaceFree));
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+                txt_resetPass.Text = "Please Enter A New Password Below";
+                Pass_NewPass.PlaceholderText = "#EnterANewPassword#";
+        }
+
+        private bool CheckPassword()
+        {
+            if (Pass_NewPass.Password == "Password")
+            {
+                passwordStatusText.Text = " 'Password' is not allowed to be set as a password";
+                return false;
+            }
+            else if (Pass_NewPass.Password.Length == 0)
+            {
+                passwordStatusText.Text = "The password field cannot be left empty";
+                return false;
+            }
+            else if (Pass_NewPass.Password.Length <= 16)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -11,9 +11,7 @@
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <TextBlock x:Name="txt_WelcomeBack" HorizontalAlignment="Center" Height="106" Margin="250,-1,289,0" TextWrapping="Wrap" Text="Welcome Back!" VerticalAlignment="Top" Width="736" FontSize="48" Foreground="Black" TextAlignment="Center"/>
             <TextBlock x:Name="txt_EnterReg" HorizontalAlignment="Center" Height="55" Margin="44,125,680,0" TextWrapping="Wrap" Text="Please Enter Registration:" VerticalAlignment="Top" Width="551" FontSize="36"/>
-            <TextBox x:Name="txtBx_RegEntered" HorizontalAlignment="Center" Height="62" Margin="610,125,258,0" TextWrapping="Wrap" Text="#EnterText#" VerticalAlignment="Top" Width="407" FontSize="36"/>
             <TextBlock x:Name="txt_EnterPass" HorizontalAlignment="Center" Height="60" Margin="45,195,700,0" TextWrapping="Wrap" Text="Please Enter Password:" VerticalAlignment="Top" Width="530" FontSize="36"/>
-            <TextBox x:Name="txtBx_PassEntered" HorizontalAlignment="Center" Height="65" Margin="610,190,255,0" TextWrapping="Wrap" Text="#EnterPassword#" VerticalAlignment="Top" Width="410" FontSize="36"/>
             <TextBlock x:Name="txt_or" HorizontalAlignment="Center" Height="50" Margin="518,325,605,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontSize="36" TextAlignment="Center" RenderTransformOrigin="0.03,0.435">
                 <Run Text="Or"/>
                 <LineBreak/>
@@ -22,6 +20,10 @@
             <Button x:Name="btn_ForgotCoin" Content="I Forgot My Coin / Password" HorizontalAlignment="Center" Margin="226,375,280,0" VerticalAlignment="Top" Height="64" Width="769" FontSize="36" Click="btn_ForgotCoin_Click"/>
             <TextBlock x:Name="txt_EnterPassAndCoin" HorizontalAlignment="Center" Height="80" Margin="225,60,258,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="792" FontSize="36" Foreground="Black" TextAlignment="Center" Text="Please enter your password and coin"/>
             <Button x:Name="btn_EnterCoin" Content="Enter Coin" HorizontalAlignment="Center" Margin="221,269,285,0" VerticalAlignment="Top" Height="56" Width="769" FontSize="36" Click="button_Copy_Click"/>
+            <PasswordBox x:Name="Pass_EnterReg" HorizontalAlignment="Left" Height="51" Margin="637,139,0,0" VerticalAlignment="Top" Width="439" PlaceholderText="#EnterReg#" FontSize="36" MaxLength="7"/>
+            <PasswordBox x:Name="Pass_EnterPassword" HorizontalAlignment="Left" Height="51" Margin="637,205,0,0" VerticalAlignment="Top" Width="439" PlaceholderText="#EnterPassword#" FontSize="36" MaxLength="16"/>
+            <TextBlock x:Name="regStatusText" HorizontalAlignment="Left" Height="37" Margin="1003,263,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="263"/>
+            <TextBlock x:Name="passwordStatusText" HorizontalAlignment="Left" Height="37" Margin="1003,102,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="263"/>
         </Grid>
     </Viewbox>
 </Page>

@@ -31,5 +31,10 @@ namespace SecureCarparkSimulation
         {
             this.Frame.Navigate(typeof(BayLocked));
         }
+
+        private void InsertChipCoin_Button_Click(object sender, RoutedEventArgs e)
+        {
+            txt_coinProcessed.Text = "~ Thank you. The information has been registered to your chip coin. Please take your chip coin to continue. ~";
+        }
     }
 }

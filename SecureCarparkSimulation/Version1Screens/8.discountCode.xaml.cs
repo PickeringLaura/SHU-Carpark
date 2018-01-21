@@ -29,7 +29,31 @@ namespace SecureCarparkSimulation
 
         private void btn_Continue_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SpaceFree));
+            if (CheckDiscountCode())
+            {
+                this.Frame.Navigate(typeof(SpaceFree));
+            }
+        }
+
+        private bool CheckDiscountCode()
+        {
+            if (pass_EnterDiscount.Password == "BN123")
+            {
+                return true;
+            }
+            else if (pass_EnterDiscount.Password == "TH589")
+            {
+                return true;
+            }
+            else if (pass_EnterDiscount.Password == "CK490")
+            {
+                return true;
+            }
+            else
+            {
+                DiscountStatusText.Text = "This discount code is invalid";
+                return false;
+            }
         }
     }
 }
