@@ -31,5 +31,10 @@ namespace SecureCarparkSimulation
         {
             this.Frame.Navigate(typeof(SpaceFree));
         }
+
+        private void btn_ForgotCoin_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(IForgotMyCoin));
+        }
     }
 }

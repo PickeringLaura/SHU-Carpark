@@ -92,6 +92,15 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Version1Screens\ForgotCoin.xaml.cs">
+      <DependentUpon>ForgotCoin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Version1Screens\ForgotPassword.xaml.cs">
+      <DependentUpon>ForgotPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Version1Screens\IForgotMyCoinOrPassword.xaml.cs">
+      <DependentUpon>IForgotMyCoinOrPassword.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Version1Screens\ContactlessPay.xaml.cs">
       <DependentUpon>ContactlessPay.xaml</DependentUpon>
     </Compile>
@@ -175,6 +184,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Version1Screens\ForgotCoin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Version1Screens\ForgotPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Version1Screens\IForgotMyCoinOrPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Version1Screens\ContactlessPay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

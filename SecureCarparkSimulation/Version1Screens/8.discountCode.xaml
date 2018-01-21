@@ -11,7 +11,7 @@
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="txt_EnterDiscountCodeBelow" HorizontalAlignment="Center" Height="49" Margin="68,14,28,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1059" FontSize="36" TextAlignment="Center" Text="Please enter discount code below and press continue"/>
             <TextBox x:Name="txtBx_EnterDiscount" HorizontalAlignment="Center" Height="65" Margin="312,88,329,0" TextWrapping="Wrap" Text="#Enter Discount Code Here#" VerticalAlignment="Top" Width="514" FontSize="36" TextAlignment="Center"/>
-            <Button x:Name="btn_Continue" Content="Continue" HorizontalAlignment="Center" Height="143" Margin="370,199,385,-2" VerticalAlignment="Top" Width="400" FontSize="48"/>
+            <Button x:Name="btn_Continue" Content="Continue" HorizontalAlignment="Center" Height="143" Margin="370,199,385,-2" VerticalAlignment="Top" Width="400" FontSize="48" Click="btn_Continue_Click"/>
     </Grid>
     </Viewbox>
 </Page>

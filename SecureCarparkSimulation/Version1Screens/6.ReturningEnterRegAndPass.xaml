@@ -19,7 +19,7 @@
                 <LineBreak/>
                 <Run/>
             </TextBlock>
-            <Button x:Name="btn_ForgotCoin" Content="I forgot my coin" HorizontalAlignment="Center" Margin="226,375,280,0" VerticalAlignment="Top" Height="64" Width="769" FontSize="36"/>
+            <Button x:Name="btn_ForgotCoin" Content="I Forgot My Coin / Password" HorizontalAlignment="Center" Margin="226,375,280,0" VerticalAlignment="Top" Height="64" Width="769" FontSize="36" Click="btn_ForgotCoin_Click"/>
             <TextBlock x:Name="txt_EnterPassAndCoin" HorizontalAlignment="Center" Height="80" Margin="225,60,258,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="792" FontSize="36" Foreground="Black" TextAlignment="Center" Text="Please enter your password and coin"/>
             <Button x:Name="btn_EnterCoin" Content="Enter Coin" HorizontalAlignment="Center" Margin="221,269,285,0" VerticalAlignment="Top" Height="56" Width="769" FontSize="36" Click="button_Copy_Click"/>
         </Grid>

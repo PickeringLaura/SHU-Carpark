@@ -20,16 +20,21 @@ namespace SecureCarparkSimulation
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class discountCode : Page
+    public sealed partial class IForgotMyCoin : Page
     {
-        public discountCode()
+        public IForgotMyCoin()
         {
             this.InitializeComponent();
         }
 
-        private void btn_Continue_Click(object sender, RoutedEventArgs e)
+        private void btn_ForgotCoin_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SpaceFree));
+            this.Frame.Navigate(typeof(ForgotCoin));
+        }
+
+        private void btn_ForgotPassword_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ForgotPassword));
         }
     }
 }
