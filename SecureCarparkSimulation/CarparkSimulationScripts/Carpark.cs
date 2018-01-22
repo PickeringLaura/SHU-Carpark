@@ -8,7 +8,7 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
 {
     public class Carpark
     {
-        string _name;
+       string _name;
         Space[] spaces;
 
         //Default constructor
@@ -36,6 +36,10 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
             //Take our list of spaces, check to see if it is not currently allocated, return the length of the list that isn't allocated.
             return spaces.Where(i => !i.IsAllocated()).ToArray().Length;
         }
-                
+
+        public Space nextAvailableCarParkingSpace()
+        {
+            return spaces.Where(i => !i.IsAllocated()).First();
+        }  
     }
 }

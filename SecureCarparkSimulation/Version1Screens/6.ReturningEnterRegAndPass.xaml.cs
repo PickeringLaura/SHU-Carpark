@@ -78,5 +78,15 @@ namespace SecureCarparkSimulation
                 return false;
             }
         }
+
+        private void btn_returnToCars_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void txt_orReturn_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -23,5 +23,10 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
         {
             return _allocated;
         }
+
+        public void SetAllocated(bool value)
+        {
+            _allocated = value;
+        }
     }
 }

@@ -10,8 +10,8 @@
     <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Button x:Name="Btn_Enter" Content="Enter Car Park" HorizontalAlignment="Center" Height="68" Margin="7,202,579,0" VerticalAlignment="Top" Width="324" MinWidth="200" MinHeight="100" RelativePanel.Below="txt_NumberOfSpaces" FontSize="36" Click="Btn_Enter_Click"/>
-            <Button x:Name="btn_AddNewCar" Content="Add Another Car" HorizontalAlignment="Left" Height="58" Margin="11,95,0,0" VerticalAlignment="Top" Width="165" FontSize="18"/>
-            <TextBlock x:Name="txt_NumberOfSpaces" HorizontalAlignment="Left" Height="29" Margin="569,10,0,0" Text="Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="22"/>
+            <Button x:Name="btn_AddNewCar" Content="Add Another Car" HorizontalAlignment="Left" Height="58" Margin="11,95,0,0" VerticalAlignment="Top" Width="165" FontSize="18" Click="btn_AddNewCar_Click"/>
+            <TextBlock x:Name="txt_Spaces" HorizontalAlignment="Left" Height="29" Margin="569,10,0,0" Text="Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="22"/>
             <TextBlock x:Name="txt_Space1" HorizontalAlignment="Left" Height="32" Margin="469,52,0,0" Text="Space 1" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" SelectionChanged="TextBlock_SelectionChanged" FontSize="18"/>
             <TextBlock x:Name="txt_space2" HorizontalAlignment="Left" Height="26" Margin="468,94,0,0" Text="Space 2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontSize="18"/>
             <TextBlock x:Name="txt_space3" HorizontalAlignment="Left" Height="32" Margin="465,133,0,0" Text="Space 3" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" FontSize="18"/>
@@ -35,6 +35,7 @@
                 </TextBlock.RenderTransform>
             </TextBlock>
             <TextBlock x:Name="txt_space18" HorizontalAlignment="Left" Height="29" Margin="682,249,0,0" Text="Space 18" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="18"/>
+            <TextBlock x:Name="txt_NumberOfSpaces" HorizontalAlignment="Left" Height="33" Margin="663,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
         </Grid>
     </Viewbox>
 </Page>

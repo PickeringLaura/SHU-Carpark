@@ -23,6 +23,8 @@ namespace SecureCarparkSimulation
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        /*TextBlock[] txtBlocks = new TextBlock { txt_Space1, txt_Space2, txt_Space3 };*/
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -69,6 +71,12 @@ namespace SecureCarparkSimulation
         private void Btn_Enter_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(CoinDispensed));
+        }
+
+        private void btn_AddNewCar_Click(object sender, RoutedEventArgs e)
+        {
+            Space space = CarparkManager.Instance.GetCarpark(3).nextAvailableCarParkingSpace();
+            space.SetAllocated(true);
         }
     }
 }
