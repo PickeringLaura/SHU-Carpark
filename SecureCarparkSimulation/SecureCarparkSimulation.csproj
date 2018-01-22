@@ -92,6 +92,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CarparkSimulationScripts\Car.cs" />
     <Compile Include="Version1Screens\ForgotCoin.xaml.cs">
       <DependentUpon>ForgotCoin.xaml</DependentUpon>
     </Compile>
@@ -156,6 +157,9 @@
     </Compile>
     <Compile Include="Version1Screens\VisaOrCreditPay.xaml.cs">
       <DependentUpon>VisaOrCreditPay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Version1Screens\whichCarpark.xaml.cs">
+      <DependentUpon>whichCarpark.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +261,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Version1Screens\VisaOrCreditPay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Version1Screens\whichCarpark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

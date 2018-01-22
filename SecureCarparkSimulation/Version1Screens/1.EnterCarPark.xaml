@@ -11,7 +11,7 @@
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Button x:Name="Btn_Enter" Content="Enter Car Park" HorizontalAlignment="Center" Height="68" Margin="7,202,579,0" VerticalAlignment="Top" Width="324" MinWidth="200" MinHeight="100" RelativePanel.Below="txt_NumberOfSpaces" FontSize="36" Click="Btn_Enter_Click"/>
             <Button x:Name="btn_AddNewCar" Content="Add Another Car" HorizontalAlignment="Left" Height="58" Margin="11,95,0,0" VerticalAlignment="Top" Width="165" FontSize="18"/>
-            <TextBlock x:Name="txt_SpacesAvailable" HorizontalAlignment="Left" Height="29" Margin="569,10,0,0" Text="Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="22"/>
+            <TextBlock x:Name="txt_NumberOfSpaces" HorizontalAlignment="Left" Height="29" Margin="569,10,0,0" Text="Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="22"/>
             <TextBlock x:Name="txt_Space1" HorizontalAlignment="Left" Height="32" Margin="469,52,0,0" Text="Space 1" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" SelectionChanged="TextBlock_SelectionChanged" FontSize="18"/>
             <TextBlock x:Name="txt_space2" HorizontalAlignment="Left" Height="26" Margin="468,94,0,0" Text="Space 2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontSize="18"/>
             <TextBlock x:Name="txt_space3" HorizontalAlignment="Left" Height="32" Margin="465,133,0,0" Text="Space 3" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" FontSize="18"/>
@@ -29,8 +29,6 @@
             <TextBlock x:Name="txt_space14" HorizontalAlignment="Left" Height="27" Margin="689,82,0,0" Text="Space 14" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" FontSize="18"/>
             <TextBlock x:Name="txt_space15" HorizontalAlignment="Left" Height="28" Margin="683,123,0,0" Text="Space 15" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" FontSize="18"/>
             <TextBlock x:Name="txt_space16" HorizontalAlignment="Left" Height="22" Margin="679,170,0,0" Text="Space 16 " TextWrapping="Wrap" VerticalAlignment="Top" Width="103" FontSize="18"/>
-            <TextBlock HorizontalAlignment="Left" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-            <TextBlock HorizontalAlignment="Left" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <TextBlock x:Name="txt_space17" HorizontalAlignment="Left" Height="29" Margin="682,203,0,0" Text="Space 17" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="18">
                 <TextBlock.RenderTransform>
                     <CompositeTransform Rotation="-0.153"/>

@@ -5,7 +5,7 @@
     xmlns:local="using:SecureCarparkSimulation"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Height="300" Width="875">
+    mc:Ignorable="d" Height="465">
 
     <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

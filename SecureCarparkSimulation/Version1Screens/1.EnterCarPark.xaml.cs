@@ -51,7 +51,17 @@ namespace SecureCarparkSimulation
 
         }
 
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void txt_NumberOfSpaces_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void TextBlock_SelectionChanged_1(object sender, RoutedEventArgs e)
         {
 
         }

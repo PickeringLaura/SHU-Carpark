@@ -11,12 +11,6 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
         string _reg;
         string _password;
 
-        public Car(string _reg, string _password)
-        {
-            _reg = "";
-            _password = "";
-        }
-
         public void SetReg(string reg)
         {
             _reg = reg;
@@ -25,6 +19,12 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
         public void SetPass(string pass)
         {
             _password = pass;
+        }
+
+        public Car(string _reg, string _password)
+        {
+            _reg = "";
+            _password = "";
         }
 
         public bool ValidateInformation(string reg, string password)
