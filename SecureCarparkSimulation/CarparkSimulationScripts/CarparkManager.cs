@@ -20,12 +20,12 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
         }
 
         Carpark[] carparks;
-        readonly string[] CARPARKNAMES = { "Applebys", "Mayfair", "North-East", "Denim", "Wheatfield" };
+        readonly string[] CARPARKNAMES = { "South-West", "Mayfair", "North-East", "Wheatfield" };
 
         CarparkManager()
         {
-            carparks = new Carpark[5];
-            for (int i = 0; i < 5; i++)
+            carparks = new Carpark[4];
+            for (int i = 0; i < 4; i++)
             {
                 carparks[i] = new Carpark(CARPARKNAMES[i], CARPARKNAMES[i].Length * 10);
             }

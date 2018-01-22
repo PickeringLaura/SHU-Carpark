@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="SecureCarparkSimulation.whichCarpark"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SecureCarparkSimulation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="btn_SouthWest" Content="South-West Car Park" HorizontalAlignment="Left" Height="261" Margin="55,339,0,0" VerticalAlignment="Top" Width="746" FontSize="48"/>
+        <Button x:Name="btn_NorthEast" Content="North-East Car Park" HorizontalAlignment="Left" Height="266" Margin="59,672,0,0" VerticalAlignment="Top" Width="746" FontSize="48"/>
+        <Button x:Name="btn_Mayfair" Content="Mayfair Car Park" HorizontalAlignment="Left" Height="270" Margin="947,339,0,0" VerticalAlignment="Top" Width="755" FontSize="48"/>
+        <Button x:Name="btn_WheatField" Content="Wheatfield Car Park" HorizontalAlignment="Left" Height="229" Margin="948,686,0,0" VerticalAlignment="Top" Width="782" FontSize="48"/>
+        <TextBlock x:Name="txt_selectWhichCarPark" HorizontalAlignment="Left" Height="179" Margin="96,64,0,0" Text="Please Select Which Car Park You Would Like to Enter" TextWrapping="Wrap" VerticalAlignment="Top" Width="1661" FontSize="72" TextAlignment="Center"/>
+
+    </Grid>
+</Page>
