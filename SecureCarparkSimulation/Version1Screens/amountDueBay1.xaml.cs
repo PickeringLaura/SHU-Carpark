@@ -15,21 +15,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-namespace SecureCarparkSimulation
+namespace SecureCarparkSimulation.Version1Screens
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SpaceFree : Page
+    public sealed partial class amountDueBay1 : Page
     {
-        public SpaceFree()
+        public amountDueBay1()
         {
             this.InitializeComponent();
-        }
-
-        private void Btn_EnterDiscountCode_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(discountCode));
         }
 
         private void Image_Tapped(object sender, TappedRoutedEventArgs e)
@@ -52,9 +47,9 @@ namespace SecureCarparkSimulation
             this.Frame.Navigate(typeof(VisaOrCreditPay));
         }
 
-        private void Image_Tapped_1(object sender, RoutedEventArgs e)
+        private void Btn_EnterDiscountCode_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(discountCode));
         }
     }
 }

@@ -28,5 +28,10 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
         {
             _allocated = value;
         }
+
+        public int GetId()
+        {
+            return _id;
+        }
     }
 }

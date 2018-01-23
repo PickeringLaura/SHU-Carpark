@@ -10,9 +10,7 @@
     <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Height="71" Margin="110,42,70,0" TextWrapping="Wrap" Text="Coin Dispensed - Please Collect From Below" VerticalAlignment="Top" Width="1100" FontSize="48" TextAlignment="Center"/>
-            <Button x:Name="Btn_CoinCollection" Content="Collect Coin" HorizontalAlignment="Center" Height="137" Margin="225,348,240,-16" VerticalAlignment="Top" Width="815" FontSize="72" Click="Btn_CoinCollection_Click" RenderTransformOrigin="0.466,-0.303"/>
-            <TextBlock x:Name="Txt_Block_AllocatedSpaceIs" HorizontalAlignment="Center" Height="72" Margin="140,147,107,0" Text="Your Allocated Space is" TextWrapping="Wrap" VerticalAlignment="Top" Width="1033" FontSize="48" TextAlignment="Center"/>
-            <TextBlock x:Name="Txt_Block_SpaceNumber" HorizontalAlignment="Center" Height="58" Margin="410,224,358,0" Text="#Space#" TextWrapping="Wrap" VerticalAlignment="Top" Width="512" TextAlignment="Center" FontSize="48"/>
+            <Button x:Name="Btn_CoinCollection" Content="Collect Coin" HorizontalAlignment="Center" Height="137" Margin="225,218,240,0" VerticalAlignment="Top" Width="815" FontSize="72" Click="Btn_CoinCollection_Click" RenderTransformOrigin="0.466,-0.303"/>
         </Grid>
     </Viewbox>
 </Page>

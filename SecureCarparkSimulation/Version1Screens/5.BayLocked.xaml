@@ -12,6 +12,7 @@
         <TextBlock x:Name="Txt_NowLocked" HorizontalAlignment="Center" Height="81" Margin="165,14,197,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="918" FontSize="48" TextAlignment="Center" Text="This bay is now Locked"/>
         <Button x:Name="Btn_Continue" Content="Continue to Unlock" HorizontalAlignment="Center" Height="136" Margin="307,240,315,0" VerticalAlignment="Top" Width="658" FontSize="72" Click="button_Click"/>
         <TextBlock x:Name="Txt_ToContinue" HorizontalAlignment="Center" Height="85" Margin="170,110,185,0" Text="To unlock press Continue" TextWrapping="Wrap" VerticalAlignment="Top" Width="925" FontSize="48" TextAlignment="Center"/>
-    </Grid>
+            <Button x:Name="btn_backToCars" Content="Back To Cars" HorizontalAlignment="Left" Height="151" Margin="19,110,0,0" VerticalAlignment="Top" Width="209" FontSize="24" Click="btn_backToCars_Click"/>
+        </Grid>
     </Viewbox>
 </Page>

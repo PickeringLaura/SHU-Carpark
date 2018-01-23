@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SecureCarparkSimulation.CarparkSimulationScripts;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -30,6 +31,18 @@ namespace SecureCarparkSimulation
         private void button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ReturningEnterRegAndPass));
+        }
+
+        private void btn_backToCars_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
+            AllocateNewSpace();
+        }
+
+        private void AllocateNewSpace()
+        {
+            Space space = CarparkManager.Instance.GetCarpark(3).nextAvailableCarParkingSpace();
+            space.SetAllocated(true);
         }
     }
 }

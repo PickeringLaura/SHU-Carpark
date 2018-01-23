@@ -27,9 +27,10 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
             carparks = new Carpark[4];
             for (int i = 0; i < 4; i++)
             {
-                carparks[i] = new Carpark(CARPARKNAMES[i], CARPARKNAMES[i].Length * 3);
+                carparks[i] = new Carpark(CARPARKNAMES[i], 18);
             }
         }
+ 
 
         public Carpark GetCarpark(int index)
         {

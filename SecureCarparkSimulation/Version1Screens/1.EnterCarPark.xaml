@@ -10,32 +10,30 @@
     <Viewbox HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
         <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
             <Button x:Name="Btn_Enter" Content="Enter Car Park" HorizontalAlignment="Center" Height="68" Margin="7,202,579,0" VerticalAlignment="Top" Width="324" MinWidth="200" MinHeight="100" RelativePanel.Below="txt_NumberOfSpaces" FontSize="36" Click="Btn_Enter_Click"/>
-            <Button x:Name="btn_AddNewCar" Content="Add Another Car" HorizontalAlignment="Left" Height="58" Margin="11,95,0,0" VerticalAlignment="Top" Width="165" FontSize="18" Click="btn_AddNewCar_Click"/>
-            <TextBlock x:Name="txt_Spaces" HorizontalAlignment="Left" Height="29" Margin="569,10,0,0" Text="Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="22"/>
-            <TextBlock x:Name="txt_Space1" HorizontalAlignment="Left" Height="32" Margin="469,52,0,0" Text="Space 1" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" SelectionChanged="TextBlock_SelectionChanged" FontSize="18"/>
-            <TextBlock x:Name="txt_space2" HorizontalAlignment="Left" Height="26" Margin="468,94,0,0" Text="Space 2" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontSize="18"/>
-            <TextBlock x:Name="txt_space3" HorizontalAlignment="Left" Height="32" Margin="465,133,0,0" Text="Space 3" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" FontSize="18"/>
-            <TextBlock x:Name="txt_space4" HorizontalAlignment="Left" Height="23" Margin="465,177,0,0" Text="Space 4" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" FontSize="18"/>
-            <TextBlock x:Name="txt_space5" HorizontalAlignment="Left" Height="30" Margin="466,216,0,0" Text="Space 5" TextWrapping="Wrap" VerticalAlignment="Top" Width="84" SelectionChanged="TextBlock_SelectionChanged" FontSize="18"/>
-            <TextBlock x:Name="txt_space6" HorizontalAlignment="Left" Height="20" Margin="466,257,0,0" Text="Space 6" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" FontSize="18"/>
-            <TextBlock x:Name="txt_space7" HorizontalAlignment="Left" Height="21" Margin="590,53,0,0" Text="Space 7" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" FontSize="18"/>
-            <TextBlock x:Name="txt_space8" HorizontalAlignment="Left" Height="28" Margin="586,88,0,0" Text="Space 8" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontSize="18"/>
-            <TextBlock x:Name="txt_space9" HorizontalAlignment="Left" Height="27" Margin="585,129,0,0" Text="Space 9" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" SelectionChanged="TextBlock_SelectionChanged_1" FontSize="18"/>
-            <TextBlock x:Name="txt_space10" HorizontalAlignment="Left" Height="21" Margin="582,173,0,0" Text="Space 10" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" FontSize="18"/>
-            <TextBlock x:Name="txt_space11" HorizontalAlignment="Left" Height="28" Margin="582,208,0,0" Text="Space11" TextWrapping="Wrap" VerticalAlignment="Top" Width="71" FontSize="18"/>
-            <TextBlock x:Name="txt_space12" HorizontalAlignment="Left" Height="29" Margin="575,246,0,0" Text="Space 12" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="18"/>
-            <TextBlock x:Name="txt_space13" HorizontalAlignment="Left" Height="23" Margin="685,52,0,0" Text="Space 13" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontSize="18"/>
+            <Button x:Name="btn_AddNewCar" Content="Add A Car" HorizontalAlignment="Left" Height="58" Margin="156,80,0,0" VerticalAlignment="Top" Width="165" FontSize="18" Click="btn_AddNewCar_Click"/>
+            <TextBlock x:Name="txt_spaces" HorizontalAlignment="Left" Height="35" Margin="569,10,0,0" Text="Spaces:" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="22"/>
+            <TextBlock x:Name="txt_space1" HorizontalAlignment="Left" Height="35" Margin="469,52,0,0" Text="#space1" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"  FontSize="18" Tapped="txt_space1_Tapped"/>
+            <TextBlock x:Name="txt_space2" HorizontalAlignment="Left" Height="35" Margin="469,94,0,0" Text="#space2" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space3" HorizontalAlignment="Left" Height="35" Margin="469,133,0,0" Text="#space3" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space4" HorizontalAlignment="Left" Height="35" Margin="469,177,0,0" Text="#space4" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space5" HorizontalAlignment="Left" Height="35" Margin="469,216,0,0" Text="#space5" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" SelectionChanged="TextBlock_SelectionChanged" FontSize="18"/>
+            <TextBlock x:Name="txt_space6" HorizontalAlignment="Left" Height="35" Margin="469,257,0,0" Text="#space6" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space7" HorizontalAlignment="Left" Height="35" Margin="574,53,0,0" Text="#space7" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space8" HorizontalAlignment="Left" Height="35" Margin="574,94,0,0" Text="#space8" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space9" HorizontalAlignment="Left" Height="35" Margin="574,134,0,0" Text="#space9" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" SelectionChanged="TextBlock_SelectionChanged_1" FontSize="18"/>
+            <TextBlock x:Name="txt_space10" HorizontalAlignment="Left" Height="35" Margin="574,176,0,0" Text="#space10" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space11" HorizontalAlignment="Left" Height="35" Margin="574,218,0,0" Text="#space11" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space12" HorizontalAlignment="Left" Height="35" Margin="574,259,0,0" Text="#space12" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space13" HorizontalAlignment="Left" Height="35" Margin="677,55,0,0" Text="#space13" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
             <TextBlock HorizontalAlignment="Left" Height="4" Margin="685,87,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="0"/>
-            <TextBlock x:Name="txt_space14" HorizontalAlignment="Left" Height="27" Margin="689,82,0,0" Text="Space 14" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" FontSize="18"/>
-            <TextBlock x:Name="txt_space15" HorizontalAlignment="Left" Height="28" Margin="683,123,0,0" Text="Space 15" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" FontSize="18"/>
-            <TextBlock x:Name="txt_space16" HorizontalAlignment="Left" Height="22" Margin="679,170,0,0" Text="Space 16 " TextWrapping="Wrap" VerticalAlignment="Top" Width="103" FontSize="18"/>
-            <TextBlock x:Name="txt_space17" HorizontalAlignment="Left" Height="29" Margin="682,203,0,0" Text="Space 17" TextWrapping="Wrap" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="18">
-                <TextBlock.RenderTransform>
-                    <CompositeTransform Rotation="-0.153"/>
-                </TextBlock.RenderTransform>
+            <TextBlock x:Name="txt_space14" HorizontalAlignment="Left" Height="35" Margin="677,92,0,0" Text="#space14" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space15" HorizontalAlignment="Left" Height="35" Margin="677,134,0,0" Text="#space15" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space16" HorizontalAlignment="Left" Height="35" Margin="677,176,0,0" Text="#space16" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_space17" HorizontalAlignment="Left" Height="35" Margin="677,215,0,0" Text="#space17" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="18">
             </TextBlock>
-            <TextBlock x:Name="txt_space18" HorizontalAlignment="Left" Height="29" Margin="682,249,0,0" Text="Space 18" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" FontSize="18"/>
-            <TextBlock x:Name="txt_NumberOfSpaces" HorizontalAlignment="Left" Height="33" Margin="663,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+            <TextBlock x:Name="txt_space18" HorizontalAlignment="Left" Height="35" Margin="677,256,0,0" Text="#space18" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" FontSize="18"/>
+            <TextBlock x:Name="txt_NumberOfSpaces" HorizontalAlignment="Left" Height="35" Margin="659,11,0,0" Text="#NumberOfSpaces#" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" SelectionChanged="txt_NumberOfSpaces_SelectionChanged_1"/>
+            <TextBlock x:Name="txt_cannotAdd" HorizontalAlignment="Left" Height="20" Margin="10,162,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" SelectionChanged="txt_cannotAdd_SelectionChanged"/>
         </Grid>
     </Viewbox>
 </Page>

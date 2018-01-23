@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using SecureCarparkSimulation.CarparkSimulationScripts;
+using SecureCarparkSimulation.Version1Screens;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -23,7 +24,9 @@ namespace SecureCarparkSimulation
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        /*TextBlock[] txtBlocks = new TextBlock { txt_Space1, txt_Space2, txt_Space3 };*/
+        TextBlock[] txtBlcks;
+
+        Button[] buttons;
 
         public MainPage()
         {
@@ -31,6 +34,9 @@ namespace SecureCarparkSimulation
 
             //Load from the "database" the carpark
             LocalInterface.LoadCarpark("Wheatfield");
+
+            txtBlcks = new TextBlock[] { txt_space1, txt_space2, txt_space3, txt_space4, txt_space5, txt_space6, txt_space7, txt_space8, txt_space9, txt_space10, txt_space11, txt_space12, txt_space13, txt_space14, txt_space15, txt_space16, txt_space17, txt_space18 };
+
             UpdateSpaces();
         }
 
@@ -41,11 +47,14 @@ namespace SecureCarparkSimulation
 
         private void AllocateNewSpace()
         {
+            Space space = CarparkManager.Instance.GetCarpark(3).nextAvailableCarParkingSpace();
+            space.SetAllocated(true);
+            txtBlcks[space.GetId()].Text = "Locked";
         }
 
         private void UpdateSpaces()
         {
-            txt_NumberOfSpaces.Text = LocalInterface.Instance.GetSpaces() + " spaces are available";
+            txt_NumberOfSpaces.Text = LocalInterface.Instance.GetSpaces() + " spaces available.";
         }
 
         private void spaces_TextChanged(object sender, TextChangedEventArgs e)
@@ -58,7 +67,12 @@ namespace SecureCarparkSimulation
 
         }
 
-        private void txt_NumberOfSpaces_SelectionChanged(object sender, RoutedEventArgs e)
+        private void txt_NumberOfSpaces_SelectionChanged_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txt_cannotAdd_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
@@ -75,8 +89,13 @@ namespace SecureCarparkSimulation
 
         private void btn_AddNewCar_Click(object sender, RoutedEventArgs e)
         {
-            Space space = CarparkManager.Instance.GetCarpark(3).nextAvailableCarParkingSpace();
-            space.SetAllocated(true);
+            txt_NumberOfSpaces.Text = CarparkManager.Instance.GetCarpark(3).GetEmptySpaces().ToString();
+            AllocateNewSpace();
+        }
+
+        private void txt_space1_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(amountDueBay1));
         }
     }
 }

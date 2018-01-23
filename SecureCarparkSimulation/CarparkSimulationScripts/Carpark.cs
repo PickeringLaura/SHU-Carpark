@@ -40,6 +40,6 @@ namespace SecureCarparkSimulation.CarparkSimulationScripts
         public Space nextAvailableCarParkingSpace()
         {
             return spaces.Where(i => !i.IsAllocated()).First();
-        }  
+        }
     }
 }
